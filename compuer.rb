@@ -1,2 +1,7 @@
-Classe dada
+Class dada
 ada
+begin
+    
+rescue => exception
+    
+end
