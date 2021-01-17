@@ -1,31 +1,18 @@
-class ApplicationController < ActionController::Base
-    protect_from_forgery whit: :exception
 
-  def index
-    @file = file.scoped
+class Computer
+  def ligar
+    'Ligado'
   end
 
-  def show
-    @file = file.find(params[:id])
+  def desligar
+    'desligado'
   end
+end
+  computer = Computer.new
 
-  def create
-    @file = file.new(params[:file])
-  end
+  puts computer.ligar
+  puts computer.desligar
 
-  def update
-    @file = file.find(params[:id])
-  end
-
-  def edit
-    @file = file.find(params[:id])
-  end
-
-  def destroy
-    file = file.find(params[:id])
-  end
+  
 
 
-    console.onebitcode('VS Code Curso');
-    puts 'Deu certo!!'
-end 
